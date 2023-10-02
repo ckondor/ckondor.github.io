@@ -1,0 +1,32 @@
+.banner{
+
+  background-image: url(../asets/banner_img.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--background-blanco);
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 12.25rem;
+  padding-bottom: 2.5rem;
+}
+
+/*.banner-tex {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem; 
+    width: 67vw;
+    color: var(--background-blanco);
+    font-weight: bold;
+}
+
+
+.banner-text h1{
+    margin-bottom: 0.3rem;
+}
+.banner-text p{
+    font-size: 0.7rem;
+    padding-bottom: 0.3rem;
+}
+*/

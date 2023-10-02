@@ -1,0 +1,135 @@
+ @media screen and (min-width: 1024px){ 
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+}      
+.container {
+    padding-left: calc((100% - 940px)/2);
+    padding-right: calc((100% - 940px)/2);
+}
+
+
+
+}
+  @media screen and (max-width: 1441px) {    
+ 
+    .products-img{
+        height: 9rem;
+        width: 9.3rem;
+    }
+    .login button,{
+        max-width: 47%;
+        width: 100%;
+      }
+    .login-input-container, .registro-form{
+        width: 47%;
+    }
+
+  }
+  
+@media screen and (max-width: 768px) {
+.container{
+    padding-right: 4%;
+    padding-left: 4%;
+} 
+.header-login {
+    margin-left: 62px;
+}
+.banner{
+    background-image: url(../asets/banner_img_tablet.png);
+}
+.contacto-info{
+    padding-left: 0px;    
+    padding-top: 3rem;
+    
+}
+ .products-img{
+    height: 8rem;
+    width: 9.2rem;
+}
+.contacto-formulario{
+    padding-left: 0px;    
+    padding-top: 1rem;
+}
+.barra-busqueda{
+    position: relative;
+    margin: 0;
+}
+.login-input-container {
+    width: 60%;
+}
+.login button{
+    max-width: 100%;
+    width: 5rem;
+}
+.registro-form{
+    width: 100%;
+    
+}
+
+  
+
+
+
+@media screen and (max-width: 360px) {
+    .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .barra-busqueda{
+        display: none;
+    }
+    .logo-alura-blue, .logo-alura-black{
+        font-size: 16px;
+     } 
+     .header-login {
+        margin-left: 0px;
+    }
+
+    .banner{
+        background-image: url(../asets/banner_img_movile.png);
+    }
+    
+    .mini-busqueda{
+        display: inline-flex;
+        color: var(--fuente-oscuro);
+    }
+    .products-img{
+        height: 8rem;
+        width: 9.2rem;
+    }
+
+    .contacto-info{
+        padding-left: 0px;    
+        padding-top: 0rem;
+        align-items: center;
+        gap: 0;
+
+    }
+    .contacto-formulario{
+        padding-left: 0px;    
+        padding-top: 0rem;
+    }
+    .contacto-logo-alura{
+        position: relative;
+
+        
+    }   
+    .contacto-contenido{
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .login-input-container {
+        width: 80%;
+    }
+    .todos-products-cabecera {
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+        
+  }
+  

@@ -1,0 +1,62 @@
+.contacto{
+    box-sizing: border-box;
+    background: var(--background-azul-claro);
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.contacto-contenido {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: relative;
+    
+    
+}
+.contacto-logo-alura{
+    position: absolute;
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+.contacto-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 10rem;
+    gap: 0.6rem;
+    min-width: max-content;
+    padding-left: 250px;
+}
+
+    
+
+.contacto-info a{
+    display: flex;
+    color: var(--fuente-oscuro);
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+}
+.contacto-formulario{
+    flex: 2;
+    display: flex;
+    gap: 0.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contacto-formulario h2{
+    display: flex;
+    font-weight: bold;
+    
+}
+.contacto-formulario button{
+    justify-content: center;
+    height: 2.2rem;
+    width: 7rem;
+
+}

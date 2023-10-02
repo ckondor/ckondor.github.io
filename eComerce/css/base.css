@@ -1,0 +1,115 @@
+:root {
+    --background-blanco: #FFFFFF;
+    --background-azul-claro: #EAF2FD;
+    --background-ceniza-claro: #F5F5F5;
+    
+
+    --fuente-oscuro-50: #A2A2A2;
+    --fuente-ceniza-claro: #666666;
+    --fuente-oscuro: #464646;
+    --fuente-enlace: #2A7AE4;
+    
+    --montserrat: 'Montserrat', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+
+    --button-font-size: 0.57rem;
+}
+
+h1{
+    font-size: 1.2rem;
+
+}
+h2{
+    font-size: 1rem;
+}
+h3{
+    font-size: 0.7rem;
+    font-weight: bold;
+}       
+a{
+    text-decoration: none;
+    color: var(--fuente-enlace);
+    font-size: 0.6rem;
+}
+
+
+body {
+    font-family: var(--open-sans);
+    font-family: var(--open-sans);
+}
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+
+    button{
+        display: flex;
+        background-color: var(--color-azul-fuerte, #2A7AE4);
+        border: none;
+        cursor: pointer;
+        color: var(--color-blanco, #FFFFFF);
+        font-family: var(--font-family, Raleway, sans-serif);
+        text-decoration: none;
+        width: 6rem;
+        padding: 0.45rem;
+        align-items: center;
+        font-size: var(--button-font-size);
+        justify-content: center;
+        height: 2.2rem;
+     }
+     
+     button:hover {
+        background-color:#285282;
+     }
+     button[type="submit"] {
+        background-color: var(--background-ceniza-claro);
+        border: none;
+        border-radius: 20px;
+        color: var(--fuente-oscuro-50);
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse; 
+    }
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    .span.texto-boton {
+        pointer-events: none;
+    }
+    .fa {
+        font-size: 21px;
+        padding-bottom: 0.16rem;
+    }
+  
+    .logo-alura{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .logo-alura-blue{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        color: var(--fuente-enlace);
+    }
+    .logo-alura-black{
+        color: var(--fuente-oscuro);
+    }
+
+    .logo-alura-blue, .logo-alura-black{
+       font-size: 22px;
+       font-weight: bold;
+       font-family: var(--open-sans);
+    } 
+    
+    
+    
+   
+

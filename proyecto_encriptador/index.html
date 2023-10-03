@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" hrep="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header container">
+        <img class="logo" src="imagenes/Frame6.png" alt="logo de alura" >
+        <h1 class="titulo">Encriptador de texto</h1>
+    </header>
+    <main class="main container">
+        <section class="encriptador">
+            <div class="texto-a-procesar">
+                <textarea class="text-area"name=text-area id="encriptador" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div>
+                    <h6 class="informacion"><i class="fa fa-exclamation-circle"></i>Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="texto-procesado"> 
+                <div class="mensaje-container">
+                    <textarea class="mensaje" id="mensaje-id" rows="10" cols="20" placeholder=""></textarea>
+                        <div id="overlay-remove" class="mensaje-overlay">
+                            <p class="mensaje-aviso">Ningun mensaje fue encontrado</p>
+                            <p class="mensaje-aviso2">Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+                    <button class="btn-copiar" id="btn-copiar"onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </section>
+       
+
+    </main>
+    <footer>
+        <p>Desarrollado por Héctor Elías Vélez García</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

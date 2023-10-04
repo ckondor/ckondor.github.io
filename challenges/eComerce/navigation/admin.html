@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Home | AluraGeek</title>
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/normalize.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comme:wght@300&display=swap" rel="stylesheet">
+       
+        <link href="../css/base.css" rel="stylesheet">
+        <link href="../css/footer.css" rel="stylesheet">
+        <link href="../css/header.css" rel="stylesheet">
+        <link href="../css/contacto.css" rel="stylesheet">
+        <link href="../css/inputs.css" rel="stylesheet">
+        <link href="../css/admin.css" rel="stylesheet">
+        <link href="../css/media_call.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+            <header class="header container">
+            
+                <div class="logo-alura">
+                    <h1 class="logo-alura-blue"><i class="fa fa-gamepad"></i> Alura</h1>
+                    <h1 class="logo-alura-black">Geek</h1>
+                </div>
+                <div class="barra-busqueda">
+                    <input type="text" class="campo-busqueda" placeholder="Buscar...">
+                    <button type="submit" class="boton-busqueda">
+                      <span class="icono-busqueda"><i class="fa fa-search"></i></span>
+                    </button>
+                </div>
+               <a class="header-login"href="productos.html"><button class="header-boton-login">Menú Administrador</button></a>
+                <div class="mini-busqueda"><i class="fa fa-search"></i></div>
+            </header>
+        <main>
+            <section class="registro container">
+                <h2>Agregar nuevo producto</h2>
+                
+            <form class="registro-form" id="registro-form">
+                <div class="input-container">
+                    <input
+                    name="url"
+                    id="url"
+                    class="input"
+                    type="url"
+                    placeholder="Url de imagen"
+                    data-form-input
+                    />
+                    <label class="input-label" for="url">Url de imagen</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input
+                    name="categoria"
+                    id="categoria"
+                    class="input"
+                    type="text"
+                    placeholder="Categoria"
+                    data-form-input
+                    />
+                    <label class="input-label" for="categoria">Categoria</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container">
+                    <input
+                    name="name"
+                    id="name"
+                    class="input"
+                    type="text"
+                    placeholder="Nombre"
+                    data-form-input
+                    />
+                    <label class="input-label" for="name">Nombre del producto</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container registry__price-container">
+                    <input
+                    name="price"
+                    id="price"
+                    class="input"
+                    type="number"
+                    placeholder="Precio"
+                    data-form-input
+                    />
+                    <label class="input-label" for="price">Precio</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="input-container registry__description-container">
+                    <input
+                    class="input"
+                    name="description"
+                    id="description"
+                    placeholder="Descripción del producto"
+                    data-form-input
+                    />
+                    <label class="input-label" for="description">Descripción del producto</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <button type="submit" data-form-btn>Agregar producto</button>
+            </form>
+                
+            </section>
+            <section class="contacto container">
+                <div class="contacto-contenido">
+                    <div class="contacto-logo-alura"> 
+                        <h1 class="logo-alura-blue"><i class="fa fa-gamepad"></i>Alura</h1>
+                        <h1 class="logo-alura-black">Geek</h1>                   
+                    </div>
+                    <ul class="contacto-info">
+                        <a href="">Quienes somos</a>
+                        <a href="">Politica de privacidad</a>
+                        <a href="">Programa de fidelidad</a>
+                        <a href="">Nuestras tiendas</a>
+                        <a href="">Quiero una franquicia</a>
+                        <a href="">Quiero anunciarme</a>
+                    </ul>
+                    <div class="contacto-formulario">
+                        <h2>Hable con nosotros</h2>
+                        <div class="input-container">
+                            <input name="name" id="name" class="input" type="text" placeholder="Nombre" maxlength="50"required data-tipo="nombre" >
+                            <label class="input-label" for="name">Nombre</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="input-container">
+                            <label class="textarea-label" for="mensaje">Escribe tu mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="textarea" rows="5" cols="33" maxlength="300" required data-tipo="mensaje"></textarea>
+                            <span class="input-message-error">Este campo no es válido</span>
+                        </div>
+                        <button>Enviar Mensaje</button>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer container">   
+                <div class="footer-rodapie">
+                    <h3>Desarrollado por Héctor Elías Vélez García</h3>
+                    <h3>2023</h3>
+                </div>
+            </footer> 
+        </main>
+            
+    </body>
+</html>
+<script  src= "../controllers/crearProducto.js" >
+</script>

@@ -12,6 +12,12 @@ inputs.forEach((input) => {
 
 const ids = ["name", "email", "asunto", "mensaje"];
 
+/**
+ * Handles input events for form inputs with a maxLength attribute.
+ * If the input value exceeds the maxLength, adds an "input-container--invalid" class to the input's parent element
+ * and displays an error message. Otherwise, removes the "input-container--invalid" class and clears the error message.
+ * @param {Event} event - The input event triggered by the user.
+ */
 function handleInput(event) {
     const input = event.target;
     const maxLength = input.maxLength;

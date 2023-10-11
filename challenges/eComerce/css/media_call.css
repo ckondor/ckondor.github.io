@@ -17,10 +17,11 @@
         height: 9rem;
         width: 9.3rem;
     }
-    .login button,{
-        max-width: 47%;
-        width: 100%;
-      }
+    .login button {
+        max-width: 20%;
+       
+    }
+    
     .login-input-container, .registro-form{
         width: 47%;
     }
@@ -37,6 +38,8 @@
 }
 .banner{
     background-image: url(../asets/banner_img_tablet.png);
+    align-items: flex-start;
+    display: flex;
 }
 .contacto-info{
     padding-left: 0px;    
@@ -52,8 +55,8 @@
     padding-top: 1rem;
 }
 .barra-busqueda{
-    position: relative;
-    margin: 0;
+    position: absolute;
+    margin-left: 140px;
 }
 .login-input-container {
     width: 60%;
@@ -67,7 +70,7 @@
     
 }
 
-  
+} 
 
 
 
@@ -88,6 +91,8 @@
 
     .banner{
         background-image: url(../asets/banner_img_movile.png);
+        display: flex;
+        align-items: flex-start;
     }
     
     .mini-busqueda{

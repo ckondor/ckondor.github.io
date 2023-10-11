@@ -16,37 +16,54 @@ header{
     gap: 1rem;
     position: relative;
 }
-.barra-busqueda{
-    position: absolute;
-    margin-left: 140px;
-    display: flex;
-    align-items: center;
-    border:none;
-    border-radius: 25px; 
-    overflow: hidden; 
-    max-width: 300px;
+.barra-busqueda {
+    position: relative;
+    border-radius: 34px;
     background-color: var(--background-ceniza-claro);
+    width: 40%;
+
   }
-.campo-busqueda {
-    display: flex;
-    flex: 1;
-    outline: none;
-    padding: 6px;
-    padding-top: 10px;
-    color: var(--fuente-oscuro-50);
-}
-  .boton-busqueda {
-    padding: 5px 10px;
-    cursor: pointer;
-    position: relative; 
-}
-.icono-busqueda {
-    max-width: 100%;
+  
+  #busqueda-formulario {
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
-}
+    
+  }
+  
+  .campo-busqueda {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 39%;
+  }
+  
+  .boton-busqueda[type="submit"] {
+    width: 50px;
+    height: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+  
+  .icono-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .icono-busqueda i {
+    font-size: 1.2rem;
+  }
 .header-login{
     margin-left:140px;
 }
@@ -69,3 +86,19 @@ header{
 .mini-busqueda{
     display: none;
 }
+.resultados-busqueda{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.resultados-busqueda a{
+    color: var(--fuente-oscuro-50);
+    font-size: 1rem;
+    padding: 5px;
+    background: var(--background-blanco);
+    width: 100%;
+   
+}   

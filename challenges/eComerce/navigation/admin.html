@@ -18,22 +18,26 @@
         <link href="../css/inputs.css" rel="stylesheet">
         <link href="../css/admin.css" rel="stylesheet">
         <link href="../css/media_call.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../controllers/Barra_busqueda.js"></script>
         
     </head>
 
     <body>
             <header class="header container">
             
-                <div class="logo-alura">
+                <a class="logo-alura" href="index.html">
                     <h1 class="logo-alura-blue"><i class="fa fa-gamepad"></i> Alura</h1>
                     <h1 class="logo-alura-black">Geek</h1>
-                </div>
+                </a>
                 <div class="barra-busqueda">
-                    <input type="text" class="campo-busqueda" placeholder="Buscar...">
-                    <button type="submit" class="boton-busqueda">
-                      <span class="icono-busqueda"><i class="fa fa-search"></i></span>
-                    </button>
-                </div>
+                    <form id="busqueda-formulario">
+                      <input type="text" class="campo-busqueda" placeholder="Buscar...">
+                      <button type="submit" class="boton-busqueda">
+                        <span class="icono-busqueda"><i class="fa fa-search"></i></span>
+                      </button>
+                    </form>
+                  </div>
                <a class="header-login"href="productos.html"><button class="header-boton-login">Menú Administrador</button></a>
                 <div class="mini-busqueda"><i class="fa fa-search"></i></div>
             </header>
@@ -119,7 +123,14 @@
                         <a href="">Quiero una franquicia</a>
                         <a href="">Quiero anunciarme</a>
                     </ul>
-                    <div class="contacto-formulario">
+                    <div id="overlay" style="display: none;"></div>
+                    <div id="mensaje-enviado" style="display: none;">
+                        <div class="mensaje-enviado-contenido">
+                            <p>El mensaje se ha enviado con éxito, pronto nos contactaremos!</p>
+                            <button id="enterado">Enterado</button>
+                        </div>
+                    </div>
+                    <form id="contacto" class="contacto-formulario">
                         <h2>Hable con nosotros</h2>
                         <div class="input-container">
                             <input name="name" id="name" class="input" type="text" placeholder="Nombre" maxlength="50"required data-tipo="nombre" >
@@ -131,8 +142,8 @@
                             <textarea name="mensaje" id="mensaje" class="textarea" rows="5" cols="33" maxlength="300" required data-tipo="mensaje"></textarea>
                             <span class="input-message-error">Este campo no es válido</span>
                         </div>
-                        <button>Enviar Mensaje</button>
-                    </div>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
                 </div>
             </section>
             <footer class="footer container">   
@@ -145,5 +156,6 @@
             
     </body>
 </html>
-<script  src= "../controllers/crearProducto.js" >
-</script>
+<script type="module" src="../validation_form/app.js"></script>
+<script src="../validation_form/submit-form.js"></script>
+<script src="../controllers/Mensaje_enviado.js"></script>

@@ -1,6 +1,10 @@
 export function valida(input) {
     const tipoDeInput = input.dataset.tipo;
     
+    if (input.form.id === 'busqueda-formulario') {
+      return;
+    }
+    
     if (validadores[tipoDeInput]) {
       validadores[tipoDeInput](input);
     }
@@ -38,7 +42,7 @@ export function valida(input) {
     password: {
       valueMissing: "El campo contraseña no puede estar vacío",
       patternMismatch:"Al menos 6 caracteres, máximo 12, debe contener una letra minúscula, una letra mayúscula, un número y no puede contener caracteres especiales.",
-    }
+    },
     asunto: {
       valueMissing: "El campo asunto no puede estar vacío.",
       textLimit: "El campo asunto no puede tener más de 50 caracteres.",

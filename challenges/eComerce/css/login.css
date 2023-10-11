@@ -25,4 +25,10 @@
   .login button{
     height: 2rem;
   }
- 
+ .login-fail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-ceniza-claro);
+    position: relative;
+  }

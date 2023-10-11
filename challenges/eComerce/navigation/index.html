@@ -21,129 +21,145 @@
         <link href="../css/contacto.css" rel="stylesheet">
         <link href="../css/footer.css" rel="stylesheet">
         <link href="../css/media_call.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../controllers/Barra_busqueda.js"></script>
         
     </head>
 
     <body>
-            <header class="header container">
-            
-                <div class="logo-alura">
+            <header class="header container" id="header">
+                <div class="titulo" style="display: none;">
+                    <h2>header</h2>
+                </div>
+                <a class="logo-alura" href="index.html">
                     <h1 class="logo-alura-blue"><i class="fa fa-gamepad"></i> Alura</h1>
                     <h1 class="logo-alura-black">Geek</h1>
-                </div>
+                </a>
                 <div class="barra-busqueda">
-                    <input type="text" class="campo-busqueda" placeholder="Buscar...">
-                    <button type="submit" class="boton-busqueda">
-                      <span class="icono-busqueda"><i class="fa fa-search"></i></span>
-                    </button>
-                </div>
+                    <form id="busqueda-formulario">
+                      <input type="text" class="campo-busqueda" placeholder="Buscar...">
+                      <button type="submit" class="boton-busqueda">
+                        <span class="icono-busqueda"><i class="fa fa-search"></i></span>
+                      </button>
+                    </form>
+                  </div>
                 <a class="header-login"href="login.html"><button class="header-boton-login">Login</button></a> 
                 <div class="mini-busqueda"><i class="fa fa-search"></i></div>
             </header>
         <main>
             
-            <section class="banner container">
+            <section class="banner container" id="banner">
+                <div class="titulo" style="display: none;">
+                    <h2>Banner</h2>
+                </div>
+                <div id="banner">
+                    <button class="banner-redirect"  onclick="redirigir()"></button>
+                    
+                </div>
             </section>
-            <section class="products container ">
+            <section class="products  container" id="products">
+                <div class="titulo" style="display: none;">
+                    <h2>Productos</h2>
+                </div>
                 <div class="products-seccion">
                     <div class="products-titulos">   
                         <h2>Juegos</h2>
-                        <a href="" >Ver todo<i class='fa fa-arrow-right alura-icono'></i></a>
+                        <a href="" class="ver-todo">Ver todo<i class='fa fa-arrow-right alura-icono'></i></a>
                     </div>
-                    <div class="products-galeria">
+                    <div  class="products-galeria">
                         <div class="products-ficha">
                             <div class="products-img">
                             <img src="../asets/juego_1.jfif" alt=""></div>
                             <h2>Eu malesuada</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a> 
+                            <a href="" class="ver-producto">Ver Producto</a> 
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_2.jfif" alt=""></div>
                             <h2> Nunc quis erat</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_3.jfif" alt=""></div>
                             <h2>Eit amet dolor</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_4.jfif" alt=""></div>
                             <h2>Auctor tristique</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_5.jfif" alt=""></div>
                             <h2>Pellentesque mollis </h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_6.jfif" alt=""></div>
                             <h2>Consectetur lacus</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_7.jfif" alt=""></div>
                             <h2>Sed molestie orci</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                     </div></div>
                 </div>
 
                 <div class="products-seccion">
                     <div class="products-titulos">   
                         <h2>Hardware y accesorios</h2>
-                        <a href="" >Ver todo<i class='fa fa-arrow-right'></i></a>
+                        <a href="" class="ver-todo">Ver todo<i class='fa fa-arrow-right'></i></a>
                     </div>
                     <div class="products-galeria">
                         <div class="products-ficha">
                             <div class="products-img"><img src="../asets/hardware_1.jfif" alt=""></div> 
                             <h2>Eu malesuada</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a> </div>
+                            <a href="" class="ver-producto">Ver Producto</a> </div>
                         <div class="products-ficha">
                             <div class="products-img"><img src="../asets/hardware_2.jfif" alt=""></div> 
                             <h2> Nunc quis erat</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                             <div class="products-img"><img src="../asets/hardware_3.jfif" alt=""></div> 
                             <h2>Eit amet dolor</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                             <div class="products-img"><img src="../asets/hardware_4.jfif" alt=""></div> 
                             <h2>Auctor tristique</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                             <div class="products-img"><img src="../asets/hardware_5.jfif" alt=""></div> 
                             <h2>Pellentesque mollis </h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                             <div class="products-img"><img src="../asets/hardware_6.jfif" alt=""></div> 
                             <h2>Consectetur lacus</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                             <div class="products-img"><img src="../asets/hardware_7.jfif" alt=""></div> 
                             <h2>Sed molestie orci</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                     </div></div>
                 </div>
 
-                <div class="products-seccion">
+                <div id="galeria" class="products-seccion">
                     <div class="products-titulos">   
                         <h2>Juguetes y arte</h2>
-                        <a href="" >Ver todo<i class='fa fa-arrow-right'></i></a>
+                        <a href="" class="ver-todo">Ver todo<i class='fa fa-arrow-right'></i></a>
                     </div>
                     <div class="products-galeria">
                         <div class="products-ficha">
@@ -151,47 +167,50 @@
                             <img src="../asets/arte_1.jfif" alt=""></div> 
                             <h2>Eu malesuada</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/arte_2.jfif" alt=""></div> 
                             <h2> Nunc quis erat</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/arte_3.jfif" alt=""></div> 
                             <h2>Eit amet dolor</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/arte_4.jfif" alt=""></div> 
                             <h2>Auctor tristique</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/arte_5.jfif" alt=""></div> 
                             <h2>Pellentesque mollis </h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/arte_6.jfif" alt=""></div> 
                             <h2>Consectetur lacus</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                         </div><div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/arte_7.jfif" alt=""></div>   
                             <h2>Sed molestie orci</h2>
                             <h3>$ 99.99</h3>
-                            <a href="">Ver Producto</a>
+                            <a href="" class="ver-producto">Ver Producto</a>
                     </div></div>
                 </div>
             </section>
-            <section class="contacto container">
+            <section class="contacto container" id="contacto">
+                <div class="titulo" style="display: none;">
+                    <h2>Contacto</h2>
+                </div>
                 <div class="contacto-contenido">
                     <div class="contacto-logo-alura"> 
                         <h1 class="logo-alura-blue"><i class="fa fa-gamepad"></i>Alura</h1>
@@ -205,7 +224,14 @@
                         <a href="">Quiero una franquicia</a>
                         <a href="">Quiero anunciarme</a>
                     </ul>
-                    <div class="contacto-formulario">
+                    <div id="overlay" style="display: none;"></div>
+                    <div id="mensaje-enviado" style="display: none;">
+                        <div class="mensaje-enviado-contenido">
+                            <p>El mensaje se ha enviado con éxito, pronto nos contactaremos!</p>
+                            <button id="enterado">Enterado</button>
+                        </div>
+                    </div>
+                    <form id="contacto" class="contacto-formulario">
                         <h2>Hable con nosotros</h2>
                         <div class="input-container">
                             <input name="name" id="name" class="input" type="text" placeholder="Nombre" maxlength="50"required data-tipo="nombre" >
@@ -217,11 +243,14 @@
                             <textarea name="mensaje" id="mensaje" class="textarea" rows="5" cols="33" maxlength="300" required data-tipo="mensaje"></textarea>
                             <span class="input-message-error">Este campo no es válido</span>
                         </div>
-                        <button>Enviar Mensaje</button>
-                    </div>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
                 </div>
             </section>
-            <footer class="footer container">   
+            <footer class="footer container" id="footer"> 
+                <div class="titulo" style="display: none;">
+                    <h2>header</h2>
+                </div>  
                 <div class="footer-rodapie">
                     <h3>Desarrollado por Héctor Elías Vélez García</h3>
                     <h3>2023</h3>
@@ -231,5 +260,12 @@
             
     </body>
 </html>
-<script type="module" src="./validation_form/app.js"></script>
+
+<script src="../controllers/redirigir-boton.js"></script>
+<script type="module" src="../validation_form/app.js"></script>
+<script src="../validation_form/submit-form.js"></script>
+<script src="../controllers/Mensaje_enviado.js"></script>
+<script src="../controllers/boton_ver.js"></script>
+
+
 

@@ -22,7 +22,6 @@
         <link href="../css/footer.css" rel="stylesheet">
         <link href="../css/media_call.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../controllers/Barra_busqueda.js"></script>
         
     </head>
 
@@ -37,12 +36,16 @@
                 </a>
                 <div class="barra-busqueda">
                     <form id="busqueda-formulario">
-                      <input type="text" class="campo-busqueda" placeholder="Buscar...">
-                      <button type="submit" class="boton-busqueda">
+                        <input type="text" id="searchInput" class="campo-busqueda" placeholder="Buscar...">
+                        <button type="submit" class="boton-busqueda">
                         <span class="icono-busqueda"><i class="fa fa-search"></i></span>
-                      </button>
+                        </button>
                     </form>
-                  </div>
+                    <ul id="lista-resultados" style="display: none;">
+        
+                    </ul>
+
+                </div>
                 <a class="header-login"href="login.html"><button class="header-boton-login">Login</button></a> 
                 <div class="mini-busqueda"><i class="fa fa-search"></i></div>
             </header>
@@ -73,43 +76,50 @@
                             <h2>Eu malesuada</h2>
                             <h3>$ 99.99</h3>
                             <a href="" class="ver-producto">Ver Producto</a> 
-                        </div><div class="products-ficha">
+                        </div>
+                        <div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_2.jfif" alt=""></div>
                             <h2> Nunc quis erat</h2>
                             <h3>$ 99.99</h3>
                             <a href="" class="ver-producto">Ver Producto</a>
-                        </div><div class="products-ficha">
+                        </div>
+                        <div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_3.jfif" alt=""></div>
                             <h2>Eit amet dolor</h2>
                             <h3>$ 99.99</h3>
                             <a href="" class="ver-producto">Ver Producto</a>
-                        </div><div class="products-ficha">
+                        </div>
+                        <div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_4.jfif" alt=""></div>
                             <h2>Auctor tristique</h2>
                             <h3>$ 99.99</h3>
                             <a href="" class="ver-producto">Ver Producto</a>
-                        </div><div class="products-ficha">
+                        </div>
+                        <div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_5.jfif" alt=""></div>
                             <h2>Pellentesque mollis </h2>
                             <h3>$ 99.99</h3>
                             <a href="" class="ver-producto">Ver Producto</a>
-                        </div><div class="products-ficha">
+                        </div>
+                        <div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_6.jfif" alt=""></div>
                             <h2>Consectetur lacus</h2>
                             <h3>$ 99.99</h3>
                             <a href="" class="ver-producto">Ver Producto</a>
-                        </div><div class="products-ficha">
+                        </div>
+                        <div class="products-ficha">
                         <div class="products-img">
                             <img src="../asets/juego_7.jfif" alt=""></div>
                             <h2>Sed molestie orci</h2>
                             <h3>$ 99.99</h3>
                             <a href="" class="ver-producto">Ver Producto</a>
-                    </div></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="products-seccion">
@@ -261,6 +271,8 @@
     </body>
 </html>
 
+<script src="../controllers/Lista_resultados.js"></script>
+<script src="../controllers/Barra_busqueda.js"></script>
 <script src="../controllers/redirigir-boton.js"></script>
 <script type="module" src="../validation_form/app.js"></script>
 <script src="../validation_form/submit-form.js"></script>

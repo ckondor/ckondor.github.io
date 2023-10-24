@@ -20,8 +20,6 @@
         <link href="../css/media_call.css" rel="stylesheet">
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="../controllers/Barra_busqueda.js"></script>
-        
     </head>
 
     <body>
@@ -33,12 +31,15 @@
                 </a>
                 <div class="barra-busqueda">
                     <form id="busqueda-formulario">
-                      <input type="text" class="campo-busqueda" placeholder="Buscar...">
-                      <button type="submit" class="boton-busqueda">
+                        <input type="text" id="searchInput" class="campo-busqueda" placeholder="Buscar...">
+                        <button type="submit" class="boton-busqueda">
                         <span class="icono-busqueda"><i class="fa fa-search"></i></span>
-                      </button>
+                        </button>
                     </form>
-                  </div>
+                    <ul id="lista-resultados" style="display: none;">
+        
+                    </ul>
+                </div>
                <!-- <a class="header-login"href=""><button class="header-boton-login">Login</button></a> -->
                 <div class="mini-busqueda"><i class="fa fa-search"></i></div>
             </header>
@@ -334,6 +335,10 @@
             
     </body>
 </html>
+<script src="../controllers/Barra_busqueda.js"></script>
+<script src="../controllers/Lista_resultados.js"></script>
 <script type="module" src="../validation_form/app.js"></script>
 <script src="../validation_form/submit-form.js"></script>
 <script src="../controllers/Mensaje_enviado.js"></script>
+<script src="../controllers/Botones_productos.js"></script>
+
